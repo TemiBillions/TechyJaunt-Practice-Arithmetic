@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Verify Your Account</title>
+    <style>
+      body { font-family: Arial, sans-serif; color: #333; }
+      .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+      .otp { font-size: 24px; font-weight: bold; color: #2b6cb0; }
+      .footer { font-size: 12px; color: #777; margin-top: 20px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Welcome <%= name || 'User' %>,</h2>
+      <p>Thanks for registering. Use the OTP below to verify your account. This code will expire shortly.</p>
+      <p class="otp"><%= otp %></p>
+      <p>If you did not create an account with us, please ignore this email.</p>
+      <div class="footer">— The Team</div>
+    </div>
+  </body>
+</html>
